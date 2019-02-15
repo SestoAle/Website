@@ -1,7 +1,7 @@
  
 $(document).ready(function(){
 	// Load about content
-	//content_loader("about/about.html"); 
+	content_loader("about/about.html"); 
 
 	// Initialize all the href
 	// $('#about').click(content_loader('about/about.html'))
