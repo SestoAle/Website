@@ -208,11 +208,11 @@ p {
 	}
 
 	p {
-		font-size: 1.2em;
+		font-size: medium;
 	}
 
 	.title {
-		font-size: 1.5em;
+		font-size: x-large;
 		font-weight: bold;
 		cursor: pointer;
 	}
