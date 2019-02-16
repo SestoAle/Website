@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	// Load about content
 	content_loader("about/about.html", "#about"); 
-	content_loader("about/about.html", "#about-mobile"); 
+	$("#about-mobile").css("font-weight", "bold")
 
 	// Initialize all the href
 	$('#about').click(function()
@@ -49,6 +49,7 @@ function content_loader(html, element)
 	$("#content-container").empty()
 	$("#content-container").load(html)
 }
+
 
 
         

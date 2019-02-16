@@ -205,10 +205,21 @@ a {
 	.title {
 		font-size: 18pt;
 		font-weight: bold;
+		cursor: pointer;
 	}
 
 	#education-container ul li {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+	}
+
+	.education {
+		width: 90%;
+		margin: 0;
+	}
+
+	.education-date {
+		width: 90%;
 	}
 }
