@@ -120,20 +120,20 @@ a {
 }
 
 p {
-	font-size: 1.1em;
+	font-size: 18px;
 }
 
 .title {
-	font-size: 1.5em;
+	font-size: 25px;
 }
 
 @media only screen and (max-width: 1300px) {
 	p {
-		font-size: 0.9em;
+		font-size: 14px;
 	}
 
 	.title {
-		font-size: 1.2em;
+		font-size: 21px;
 		font-weight: bold;
 	}
 
@@ -208,11 +208,11 @@ p {
 	}
 
 	p {
-		font-size: medium;
+		font-size: 18px;
 	}
 
 	.title {
-		font-size: x-large;
+		font-size: 25px;
 		font-weight: bold;
 		cursor: pointer;
 	}
