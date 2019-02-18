@@ -43,12 +43,10 @@ $(document).ready(function(){
 
 	$(function(){
 	    var hash = window.location.hash.replace('#','');
-		alert(hash);
 	    var pages = ['about','education','projects'];
 	    if(pages.indexOf(hash) > 0){
 	    	content_loader(hash + "/" + hash + ".html", "#" + hash)
 	    }
-
 	});
 })
 
@@ -58,6 +56,7 @@ function content_loader(html, element)
 	$(element).css("font-weight", "bold")
 	$("#content-container").empty()
 	$("#content-container").load(html)
+	window.history.pushState(element, "Alessandro Sestini " + element, "/element");
 }
 
 
