@@ -52,11 +52,12 @@ $(document).ready(function(){
 
 function content_loader(html, element)
 {
+	window.history.pushState("home", "Alessandro Sestini", "");
 	$(".link").css("font-weight", "normal")
 	$(element).css("font-weight", "bold")
 	$("#content-container").empty()
 	$("#content-container").load(html)
-	//window.history.pushState(element, "Alessandro Sestini " + element, "/" + element);
+	window.history.pushState(element, "Alessandro Sestini " + element, "/" + element);
 }
 
 
