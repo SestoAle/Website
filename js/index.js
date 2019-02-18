@@ -56,7 +56,7 @@ function content_loader(html, element)
 	$(element).css("font-weight", "bold")
 	$("#content-container").empty()
 	$("#content-container").load(html)
-	window.history.pushState(element, "Alessandro Sestini " + element, "/element");
+	window.history.pushState(element, "Alessandro Sestini " + element, "/" + element);
 }
 
 
