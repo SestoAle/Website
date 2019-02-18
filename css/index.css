@@ -1,3 +1,10 @@
+body {
+	font-family: 'Cardo', serif;
+	font-weight: 100;
+	line-height: 2.0em;
+	color: grey;
+}
+
 #site-container {
 	display:flex;
 	flex-direction: row;
@@ -33,6 +40,7 @@ i {
 	min-height: 100%;
 	margin-left: 100px;
 	margin-top: 50px;
+	padding-bottom: 80px;
 }
 
 .title {
@@ -71,7 +79,7 @@ i {
 }
 
 #about-text {
-	width: 30%;
+	width: 40%;
 	margin-left: 50px;
 }
 
@@ -81,7 +89,7 @@ i {
 }
 
 li {
-	margin-top: 100px;
+	margin-top: 60px;
 }
 
 a {
@@ -92,6 +100,10 @@ a {
 	min-width: 320px;
 	width: 30%;
 	border-radius: 5%;
+}
+
+.project-image-vertical {
+	width: 15%;
 }
 
 #education-container ul li {
@@ -125,6 +137,18 @@ p {
 
 .title {
 	font-size: 25px;
+}
+
+#education-container ul {
+	padding-left: 0px;
+}
+
+.text {
+	color: #686868;
+}
+
+.education-title {
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -201,6 +225,7 @@ p {
 		min-width: 0;
 		width: 80%;
 		border-radius: 5%;
+		max-width: 320px;
 	}
 
 	li {
@@ -288,6 +313,7 @@ p {
 		min-width: 0;
 		width: 80%;
 		border-radius: 5%;
+		max-width: 320px;
 	}
 
 	li {
@@ -318,4 +344,5 @@ p {
 	.education-date {
 		width: 90%;
 	}
+
 }
