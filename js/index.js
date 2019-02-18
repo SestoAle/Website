@@ -5,10 +5,10 @@ $(document).ready(function(){
 	$("#about-mobile").css("font-weight", "bold")
 
 	// Initialize all the href
-	$('#about').click(function()
-	{
-		content_loader('about/about.html', this)
-	})
+	// $('#about').click(function()
+	// {
+	// 	content_loader('about/about.html', this)
+	// })
 	$('#about-mobile').click(function()
 	{
 		content_loader('about/about.html', this)
@@ -40,6 +40,16 @@ $(document).ready(function(){
 	{
 		content_loader('education/education.html', this)
 	})
+
+	$(function(){
+
+	    var hash = window.location.hash.replace('#','');
+	    var pages = ['about','education','projects'];
+	    if(pages.indexOf(hash) > 0){
+	    	alert(hash);
+	    }
+
+	});
 })
 
 function content_loader(html, element)
@@ -49,6 +59,8 @@ function content_loader(html, element)
 	$("#content-container").empty()
 	$("#content-container").load(html)
 }
+
+
 
 
 
