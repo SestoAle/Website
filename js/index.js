@@ -42,7 +42,7 @@ $(document).ready(function(){
 	})
 
 	$(function(){
-
+		alert("uya");
 	    var hash = window.location.hash.replace('#','');
 	    var pages = ['about','education','projects'];
 	    if(pages.indexOf(hash) > 0){
