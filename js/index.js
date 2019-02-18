@@ -25,20 +25,20 @@ $(document).ready(function(){
 
 	$('#projects').click(function()
 	{
-		content_loader('projects/projects.html', this)
+		content_loader('projects/projects.html', '#projetcs')
 	})
 	$('#projects-mobile').click(function()
 	{
-		content_loader('projects/projects.html', this)
+		content_loader('projects/projects.html', '#projetcs')
 	})
 
 	$('#education').click(function()
 	{
-		content_loader('education/education.html', this)
+		content_loader('education/education.html', '#education')
 	})
 	$('#education-mobile').click(function()
 	{
-		content_loader('education/education.html', this)
+		content_loader('education/education.html', '#education')
 	})
 
 	$(function(){
@@ -52,8 +52,6 @@ $(document).ready(function(){
 
 function content_loader(html, element)
 {
-	window.history.pushState("home", "Alessandro Sestini", "")
-	alert("yeah")
 	$(".link").css("font-weight", "normal")
 	$(element).css("font-weight", "bold")
 	$("#content-container").empty()
