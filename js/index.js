@@ -1,8 +1,22 @@
  
+var pages = ['about','education','projects']
+
 $(document).ready(function(){
-	// Load about content
-	content_loader("about/about.html", "#about"); 
-	$("#about-mobile").css("font-weight", "bold")
+
+	// Check if there's an hash in the link
+	var hash = window.location.hash.replace('#','')
+    if(pages.indexOf(hash) > 0)
+    {
+
+    	content_loader(hash + "/" + hash + ".html", "#" + hash)
+    } 
+    else
+    {
+    	// Load about content
+		content_loader("about/about.html", "#about") 
+		$("#about-mobile").css("font-weight", "bold")	
+    }
+	
 
 	// Initialize all the href
 	// $('#about').click(function()
@@ -25,11 +39,11 @@ $(document).ready(function(){
 
 	$('#projects').click(function()
 	{
-		content_loader('projects/projects.html', '#projetcs')
+		content_loader('projects/projects.html', '#projects')
 	})
 	$('#projects-mobile').click(function()
 	{
-		content_loader('projects/projects.html', '#projetcs')
+		content_loader('projects/projects.html', '#projects')
 	})
 
 	$('#education').click(function()
