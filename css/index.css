@@ -230,6 +230,10 @@ p {
 		max-width: 320px;
 	}
 
+	.project-description {
+		margin-right: 40px;
+	}
+
 	li {
 		margin-top: 50px;
 	}
