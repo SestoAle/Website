@@ -46,7 +46,7 @@ $(document).ready(function(){
 		alert(hash);
 	    var pages = ['about','education','projects'];
 	    if(pages.indexOf(hash) > 0){
-	    	alert(hash);
+	    	content_loader(hash + "/" + hash + ".html", "#" + hash)
 	    }
 
 	});
