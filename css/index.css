@@ -3,6 +3,7 @@ body {
 	font-weight: 100;
 	line-height: 2.0em;
 	color: grey;
+	word-spacing: 1px;
 }
 
 #site-container {
