@@ -43,7 +43,7 @@ $(document).ready(function(){
 
 	$(function(){
 	    var hash = window.location.hash.replace('#','');
-		alert("hash");
+		alert(hash);
 	    var pages = ['about','education','projects'];
 	    if(pages.indexOf(hash) > 0){
 	    	alert(hash);
