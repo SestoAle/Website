@@ -112,7 +112,7 @@ a {
 	flex-direction: row;
 }
 
-.education {
+.education-point {
 	width: 40%;
 }
 
@@ -254,7 +254,7 @@ p {
 		align-items: center;
 	}
 
-	.education {
+	.education-point {
 		width: 90%;
 		margin: 0;
 	}
@@ -342,7 +342,7 @@ p {
 		align-items: center;
 	}
 
-	.education {
+	.education-point {
 		width: 90%;
 		margin: 0;
 	}

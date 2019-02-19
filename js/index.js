@@ -7,61 +7,30 @@ $(document).ready(function(){
 	var hash = window.location.hash.replace('#','')
     if(pages.indexOf(hash) > 0)
     {
-
-    	content_loader(hash + "/" + hash + ".html", "#" + hash)
+    	content_loader(hash + "/" + hash + ".html", "." + hash)
     } 
     else
     {
     	// Load about content
-		content_loader("about/about.html", "#about") 
-		$("#about-mobile").css("font-weight", "bold")	
+		content_loader("about/about.html", ".about") 
     }
 	
 
-	// Initialize all the href
-	// $('#about').click(function()
-	// {
-	// 	content_loader('about/about.html', this)
-	// })
-	$('#about-mobile').click(function()
+	//Initialize all the href
+	$('.about').click(function()
 	{
-		content_loader('about/about.html', this)
+		content_loader('about/about.html', ".about")
 	})
 
-	$('#title-name').click(function()
+	$('.projects').click(function()
 	{
-		content_loader('about/about.html', "#about")
-	})
-	$('#title-name-mobile').click(function()
-	{
-		content_loader('about/about.html', "#about-mobile")
+		content_loader('projects/projects.html', ".projects")
 	})
 
-	$('#projects').click(function()
+	$('.education').click(function()
 	{
-		content_loader('projects/projects.html', '#projects')
+		content_loader('education/education.html', ".education")
 	})
-	$('#projects-mobile').click(function()
-	{
-		content_loader('projects/projects.html', '#projects')
-	})
-
-	$('#education').click(function()
-	{
-		content_loader('education/education.html', '#education')
-	})
-	$('#education-mobile').click(function()
-	{
-		content_loader('education/education.html', '#education')
-	})
-
-	$(function(){
-	    var hash = window.location.hash.replace('#','');
-	    var pages = ['about','education','projects'];
-	    if(pages.indexOf(hash) > 0){
-	    	content_loader(hash + "/" + hash + ".html", "#" + hash)
-	    }
-	});
 })
 
 function content_loader(html, element)
@@ -70,6 +39,7 @@ function content_loader(html, element)
 	$(element).css("font-weight", "bold")
 	$("#content-container").empty()
 	$("#content-container").load(html)
+  	element = element.replace(".", "#");
 	window.history.pushState(element, "Alessandro Sestini " + element, "/" + element)
 }
 
