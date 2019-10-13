@@ -1,5 +1,5 @@
  
-var pages = ['about','education','projects']
+var pages = ['about','education','projects', 'publications']
 
 $(document).ready(function(){
 
@@ -30,6 +30,11 @@ $(document).ready(function(){
 	$('.education').click(function()
 	{
 		content_loader('education/education.html', ".education")
+	})
+	
+	$('.publications').click(function()
+	{
+		content_loader('publications/publications.html', ".publications")
 	})
 })
 
