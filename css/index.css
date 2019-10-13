@@ -164,6 +164,16 @@ p {
 	color: rgb(100,100,100);
 }
 
+.publications-point {
+	width: 100%;
+}
+
+.publications {
+
+}
+
+
+
 @media only screen and (max-width: 1300px) {
 	p {
 		font-size: 14px;
