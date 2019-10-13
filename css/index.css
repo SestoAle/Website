@@ -128,7 +128,6 @@ a {
 
 .thesis-title {
 	font-style: italic;
-	color: rgb(100,100,100);
 }
 
 .education-description {
@@ -162,6 +161,7 @@ p {
 
 .education-title {
 	font-weight: bold;
+	color: rgb(100,100,100);
 }
 
 @media only screen and (max-width: 1300px) {
