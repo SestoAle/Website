@@ -83,6 +83,11 @@ i {
 	border-radius: 5%;
 }
 
+.bold {
+	color: rgb(100,100,100);
+	font-weight: bold;
+}
+
 #about-text {
 	width: 40%;
 	margin-left: 50px;
@@ -91,6 +96,7 @@ i {
 .project-name {
 	font-weight: bold;
 	font-size: 18pt;
+	color: rgb(100,100,100);
 }
 
 li {
