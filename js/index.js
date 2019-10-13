@@ -37,7 +37,7 @@ function content_loader(html, element)
 {
 	$(".link").css("font-weight", "normal")
 	$(element).css("font-weight", "bold")
-	$(element).css("color", "black")
+	$(element).css("color", "rgb(100,100,100)")
 	$("#content-container").empty()
 	$("#content-container").load(html)
   	element = element.replace(".", "#");
