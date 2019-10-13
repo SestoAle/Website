@@ -48,7 +48,7 @@ i {
 .title {
 	font-size: 20pt;
 	font-weight: bold;
-	color:black;
+	color:rgb(100,100,100);
 }
 
 #link-container {
@@ -61,12 +61,12 @@ i {
 
 .link:hover {
 	font-style: italic;
-	color: black;
+	color: rgb(100,100,100);
 }
 
 #title-name {
 	cursor: pointer;
-	color:black;
+	color:rgb(100,100,100);
 }
 
 #about-container {
