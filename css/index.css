@@ -28,7 +28,7 @@ body {
 	margin-top: 100px;
 	position: fixed;
 	padding-right: 50px; 
-	border-right: solid rgb(220,220,220) 1pt;
+	border-right: solid rgb(202,202,202) 1pt;
 }
 
 i {
@@ -180,9 +180,11 @@ p {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		border-bottom: 1px black solid;
+		border-bottom: 1px rgb(202,202,202) solid;
 		padding-bottom: 50px;
 		margin-top: 50px;
+		margin-right: 80px;
+		margin-left: 80px;
 	}
 
 	#header-bar {
@@ -272,9 +274,11 @@ p {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		border-bottom: 1px black solid;
+		border-bottom: 1px rgb(202,202,202) solid;
 		padding-bottom: 50px;
 		margin-top: 50px;
+		margin-right: 80px;
+		margin-left: 80px;
 	}
 
 	#header-bar {
