@@ -269,6 +269,7 @@ p {
 		font-size: 35px;
 		font-weight: bold;
 		cursor: pointer;
+		margin-left:20px;
 	}
 
 	#education-container ul li {
@@ -359,6 +360,7 @@ p {
 		font-size: 35px;
 		font-weight: bold;
 		cursor: pointer;
+		margin-left:20px;
 	}
 
 	#education-container ul li {
